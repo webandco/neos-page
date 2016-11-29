@@ -1,0 +1,24 @@
+prototype(TYPO3.Neos:Page) {
+    head {
+        scale = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+
+		stylesheets.site = TYPO3.TypoScript:Template {
+			templatePath = 'resource://Webandco.Base/Private/Templates/Page/Default.html'
+			sectionName = 'stylesheets'
+		}
+
+		javascripts.site = TYPO3.TypoScript:Template {
+			templatePath = 'resource://Webandco.Base/Private/Templates/Page/Default.html'
+			sectionName = 'headScripts'
+		}
+	}
+
+    bodyTag {
+        attributes.class = 'default'
+    }
+
+    body {
+        sectionName = 'body'
+        templatePath = 'resource://Webandco.Base/Private/Templates/Page/Default.html'
+    }
+}

@@ -1,0 +1,21 @@
+'TYPO3.Neos.NodeTypes:Page':
+  abstract: false
+
+'Webandco.Base:Document':
+  abstract: true
+  superTypes:
+    'TYPO3.Neos:Document': true
+
+'Webandco.Base:DocumentPage':
+  abstract: false
+  superTypes:
+    'Webandco.Base:Document': true
+  ui:
+    label: 'Page'
+    icon: icon-file
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': true
