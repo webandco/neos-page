@@ -1,4 +1,0 @@
-prototype(Webandco.Base:Content) >
-prototype(Webandco.Base:Content) < prototype(TYPO3.Neos:Content) {
-
-}

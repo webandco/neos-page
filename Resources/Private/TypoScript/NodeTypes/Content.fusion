@@ -1,0 +1,4 @@
+prototype(Webandco.Base:Content) >
+prototype(Webandco.Base:Content) < prototype(Neos.Neos:Content) {
+
+}

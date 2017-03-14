@@ -1,8 +1,8 @@
 {
-    "name": "webandco/neos-page",
-    "type": "typo3-flow-package",
+    "type": "neos-package",
+    "name": "webandco/page",
     "description": "web&co neos page package",
-    "keywords": ["typo3", "flow", "neos", "page"],
+    "keywords": ["flow", "neos", "base", "eel", "viewHelper"],
     "homepage": "http://webandco.com",
     "license": "GPL-3.0+",
     "authors": [
@@ -23,11 +23,11 @@
         "email": "support@webandco.com"
     },
     "require": {
-        "typo3/neos": "^2.0"
+        "neos/neos": "^3.0"
     },
     "autoload": {
-        "psr-0": {
-            "Webandco\\Page": "Classes/"
+        "psr-4": {
+            "Webandco\\Page\\": "Classes/"
         }
     },
     "extra": {
