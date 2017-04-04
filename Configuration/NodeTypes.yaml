@@ -1,10 +1,10 @@
-'TYPO3.Neos.NodeTypes:Page':
-  abstract: false
+'Neos.NodeTypes:Page':
+  abstract: true
 
 'Webandco.Base:Document':
   abstract: true
   superTypes:
-    'TYPO3.Neos:Document': true
+    'Neos.Neos:Document': true
 
 'Webandco.Base:DocumentPage':
   abstract: false
