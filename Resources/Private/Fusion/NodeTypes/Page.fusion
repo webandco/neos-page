@@ -1,24 +1,20 @@
 prototype(Neos.Neos:Page) {
     head {
         scale = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
-
-		stylesheets.site = Neos.Fusion:Template {
-			templatePath = 'resource://Webandco.Page/Private/Templates/Page/Default.html'
-			sectionName = 'stylesheets'
-		}
-
-		javascripts.site = Neos.Fusion:Template {
-			templatePath = 'resource://Webandco.Page/Private/Templates/Page/Default.html'
-			sectionName = 'headScripts'
-		}
-	}
+    }
 
     bodyTag {
         attributes.class = 'default'
     }
 
-    body {
-        sectionName = 'body'
-        templatePath = 'resource://Webandco.Page/Private/Templates/Page/Default.html'
+    body >
+    body = Neos.Fusion:Tag {
+        tagName = 'div'
+        attributes.class = 'content'
+        content = Neos.Fusion:Array {
+            main = Neos.Neos:PrimaryContent {
+                nodePath = 'main'
+            }
+        }
     }
 }
