@@ -9,6 +9,7 @@ prototype(Neos.Neos:Page) {
 
     body >
     body = Neos.Fusion:Tag {
+        @position = 'after bodyTag'
         tagName = 'div'
         attributes.class = 'content'
         content = Neos.Fusion:Array {
