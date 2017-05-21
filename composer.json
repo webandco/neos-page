@@ -1,6 +1,6 @@
 {
     "type": "neos-package",
-    "name": "webandco/page",
+    "name": "webandco/neos-page",
     "description": "web&co neos page package",
     "keywords": ["flow", "neos", "base", "eel", "viewHelper"],
     "homepage": "http://webandco.com",
