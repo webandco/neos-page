@@ -1,8 +1,8 @@
 {
     "type": "neos-package",
     "name": "webandco/neos-page",
-    "description": "web&co neos page package",
-    "keywords": ["flow", "neos", "base", "eel", "viewHelper"],
+    "description": "web&co neos page package with alternive fuions only base rendering",
+    "keywords": ["flow", "neos"],
     "homepage": "http://webandco.com",
     "license": "GPL-3.0+",
     "authors": [
