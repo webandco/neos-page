@@ -6,7 +6,6 @@ Structure
 ```
 body = Neos.Fusion:Array {
     @position = 'after bodyTag'
-    attributes.class = 'content'
     content = Neos.Fusion:Array {
         main = Neos.Neos:PrimaryContent {
             nodePath = 'main'
